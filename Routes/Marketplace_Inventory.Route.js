@@ -13,7 +13,7 @@ MarketPlaceRouter.get("/",authenticate,async(req,res)=>{
 })
 
 
-MarketPlaceRouter.post("/",async(req,res)=>{
+MarketPlaceRouter.post("/add",async(req,res)=>{
     const {user} = req.body;
     const payload = req.body
 
