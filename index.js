@@ -17,12 +17,7 @@ app.use("/marketplace",MarketPlaceRouter)
 
 
 app.listen(process.env.PORT, async () => {
-    try {
       await connection;
-      console.log("Connected to DB");
-    } catch (error) {
-      console.log(" Cannot Connected to DB");
-      console.log(error);
-    }
+
     console.log("Server is running");
   });
