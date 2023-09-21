@@ -16,7 +16,7 @@ app.use("/oem",oemRouter)
 app.use("/marketplace",MarketPlaceRouter)
 
 
-app.listen(process.env.port, async () => {
+app.listen(8080, async () => {
     try {
       await connection;
       console.log("Connected to DB");
