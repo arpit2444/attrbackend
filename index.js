@@ -15,9 +15,8 @@ app.use("/users", userRouter);
 app.use("/oem",oemRouter)
 app.use("/marketplace",MarketPlaceRouter)
 
-const PORT= process.env.port
 
-app.listen(PORT, async () => {
+app.listen(process.env.port, async () => {
     try {
       await connection;
       console.log("Connected to DB");
